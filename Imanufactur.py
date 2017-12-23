@@ -11,7 +11,7 @@ from tqdm import tqdm
 from sklearn.linear_model import LinearRegression
 from sklearn import preprocessing
 
-#### calculate miss values
+#### calculate miss values1
 def col_miss(train_df):
     col_missing_df = train_df.isnull().sum(axis=0).reset_index()
     col_missing_df.columns = ['col','missing_count']
